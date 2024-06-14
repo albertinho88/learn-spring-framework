@@ -2,6 +2,8 @@ package ec.clicka.learnspringframework;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import java.util.Arrays;
+
 public class App02HelloWorldSpring {
     public static void main(String[] args) {
 
@@ -22,6 +24,10 @@ public class App02HelloWorldSpring {
         System.out.println(context.getBean("person3Parameters"));
 
         System.out.println(context.getBean("address2"));
+        System.out.println(context.getBean(Address.class));
+        System.out.println(context.getBean(Person.class));
+
+        //Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
 
     }
 }
