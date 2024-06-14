@@ -9,7 +9,6 @@ import org.springframework.context.annotation.Primary;
 public class GamingConfiguration {
 
     @Bean
-    @Primary
     public GamingConsole game() {
         var game = new PacmanGame();
         return game;
